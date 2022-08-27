@@ -9,14 +9,17 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link href="css\file.css" rel="stylesheet" type="text/css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 </head>
 <body>
+  <div class="preloader"></div>
+  <div class="content">
     <div class="container-fluid">
         <div class="row">
           <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                 <nav class="navbar navbar-expand-lg fixed-top">
                     <div class="container-fluid">
-                      <a class="navbar-brand" href="home.html">
+                      <a class="navbar-brand" href="index.html">
                         <img src="images\logo.png" alt="amrita logo" class="image-fluid" width="150" height="auto">
                       </a>
                       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,7 +28,7 @@
                       <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 main-menu">
                           <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            <a class="nav-link active" aria-current="page" href="home.html">Home</a>
                           </li>
                           <li class="nav-item">
                             <a class="nav-link" href="about.html">About</a>
@@ -64,6 +67,13 @@
             </p>
         </div>
     </div>
-  </div>
+</div>
+</div>
+<script>
+  $(window).on('load',function(){
+    $(".preloader").fadeOut(1000);
+    $(".content").fadeIn(1000);
+  });
+</script>
 </body>
 </html>
